@@ -55,11 +55,12 @@ foreach $claim (@input) {
                 $singleClaim = 0;
                 last;
             }
-            if ($singleClaim == 0) {
-                last;
-            }
+        }
+        if ($singleClaim == 0) {
+            last;
         }
     }
+
     if ($singleClaim == 1) {
         print "Unshared claim: '$claim'\n";
     }
