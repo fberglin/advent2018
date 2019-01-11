@@ -61,8 +61,11 @@ while ($duration > 450) {
 
 for my $minute (0 ... $duration - 1) {
 
-    print "\033[2J";    #clear the screen
-    print "\033[0;0H"; #jump to 0,0
+    # Clear the screen
+    print "\033[2J";
+    # Jump to 0,0
+    print "\033[0;0H";
+
     print "$minute/$duration\n";
     printGrid(\@last, $xMax, $yMax);
 

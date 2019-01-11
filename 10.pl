@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
 use Data::Dumper;
 
@@ -66,7 +66,6 @@ foreach $line (@input) {
 }
 
 $tick = 0;
-@ticks = ();
 
 $lastX = 10e6;
 $lastY = 10e6;
